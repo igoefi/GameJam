@@ -698,7 +698,7 @@ MonoBehaviour:
   _damageMultiply: 1
   _enemyLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 128
   _maxWeapons: 3
   _weaponSystem: {fileID: 2495059448024860673}
   _dashForce: 7
@@ -706,7 +706,7 @@ MonoBehaviour:
   _dashAddCD: 1
   _dashCount: 3
   _cameraDistance: 2
-  _body: {fileID: 0}
+  _body: {fileID: 6499452764404292964}
 --- !u!114 &7549853777950837955
 MonoBehaviour:
   m_ObjectHideFlags: 0

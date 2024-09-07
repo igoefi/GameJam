@@ -50,7 +50,7 @@ GameObject:
   - component: {fileID: 2505555782123983716}
   - component: {fileID: 2707142191754426201}
   - component: {fileID: 5857943137796806785}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: SimpleWeaponEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -189,8 +189,9 @@ MonoBehaviour:
   _damageMultiply: 1
   _enemyLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 256
   _maxWeapons: 0
+  _weaponSystem: {fileID: 5857943137796806785}
   _rays: 5
   _distance: 10
   _angle: 60
@@ -263,7 +264,10 @@ MonoBehaviour:
       type: 3}
     _currentAmmo: -1
   _stats: {fileID: 6150194168860502555}
-  _weaponPosition: {fileID: 1890209035878119581}
+  _pistolPosition: {fileID: 1890209035878119581}
+  _machineGunPosition: {fileID: 1890209035878119581}
+  _shotgunPosition: {fileID: 1890209035878119581}
+  _meleePosition: {fileID: 1890209035878119581}
 --- !u!1 &8907577825949904575
 GameObject:
   m_ObjectHideFlags: 0
