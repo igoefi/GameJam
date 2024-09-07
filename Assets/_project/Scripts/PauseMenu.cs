@@ -42,7 +42,7 @@ public class PauseMenu : MonoBehaviour
 
     public void LoadMenu()
     {
-        Debug.Log("IMBA");
+        Debug.Log("IMBA123");
         Time.timeScale = 1f;
         SceneManager.LoadScene("MainMenu");
     }
