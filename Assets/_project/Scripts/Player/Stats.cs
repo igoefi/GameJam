@@ -39,19 +39,20 @@ public class Stats : MonoBehaviour
     [SerializeField] int _maxWeapons;
     public int MaxWeapons { get => _maxWeapons; }
 
+    public bool CanFire { get; set; } = true;
+    public bool CanMove { get; set; } = true;
+    public bool IsDead { get; set; } = false;
+
     [Header("Components")]
 
     [SerializeField] WeaponSystem _weaponSystem;
     public WeaponSystem WeaponSystem { get => _weaponSystem; }
 
-    public bool CanFire { get; set; } = true;
-    public bool CanMove { get; set; } = true;
-    public bool CanRotate { get; set; } = true;
-    public bool IsDead { get; set; } = false;
 
     public virtual void Hit(float damage, Stats attacker, Transform attackPoint)
     {
         if (damage <= 0) return;
+
 
         _HP = _HP - damage <= 0 ? 0 : _HP - damage;
         if (_HP == 0)

@@ -21,11 +21,10 @@ public class PlayerStats : Stats
     [SerializeField] float _cameraDistance;
     public float CameraDistance { get => _cameraDistance; }
 
+    [Header("Components")]
+
     [SerializeField] Rigidbody _body;
     public Rigidbody Rigidbody { get => _body; }
-
-    public bool IsDashing { get; set; }
-
 
     private void Awake() =>
         Instance = this;
@@ -35,13 +34,6 @@ public class PlayerStats : Stats
         HaveDashCount = _dashCount;
         _HP = _maxHP;
     }
-
-    public override void Hit(float damage, Stats attacker, Transform attackPoint)
-    {
-        if(!IsDashing)
-            base.Hit(damage, attacker, attackPoint);
-    }
-
 
     public void SetMaximumStats(VarBuffEnum var, TypeBuffEnum type, float value)
     {

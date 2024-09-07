@@ -57,13 +57,4 @@ public class Movement : KDTimer
         else
             _addDashCoroutine = null;
     }
-
-    protected override IEnumerator CheckCD(float timeKD)
-    {
-        _isReady = false;
-        _stats.IsDashing = true;
-        yield return new WaitForSeconds(timeKD);
-        _stats.IsDashing = false;
-        _isReady = true;
-    }
 }

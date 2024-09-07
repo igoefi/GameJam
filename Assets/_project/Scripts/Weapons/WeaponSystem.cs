@@ -115,7 +115,6 @@ public class WeaponSystem : MonoBehaviour
     {
         if (_selectedWeapon != null)
             Destroy(_selectedWeapon.gameObject);
-
         var weaponPosition = GetWeaponPosition(_weapons[_selectedIndex].Weapon);
         _selectedWeapon = Instantiate(_weapons[_selectedIndex].Weapon,
             weaponPosition.position, weaponPosition.rotation,
@@ -154,7 +153,6 @@ public class WeaponSystem : MonoBehaviour
 
     private ShootingWeapon GetShootingWeapon()
     {
-        Debug.Log(_selectedWeapon == null);
         if (_selectedWeapon.IsMeleeWeapon) return null;
 
         return (ShootingWeapon) _selectedWeapon;
