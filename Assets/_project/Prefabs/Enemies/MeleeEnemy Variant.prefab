@@ -67,7 +67,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _weapons.Array.data[0]._prefab
       value: 
-      objectReference: {fileID: 6455708926377886582, guid: d4ed23005b900b4459416ae1a9e1fc19,
+      objectReference: {fileID: 6455708926377886582, guid: 9b55daff3124eab41bc68d2e71fc7d81,
         type: 3}
     - target: {fileID: 6150194168860502555, guid: 75baa96a09f28b442a35a9302b472331,
         type: 3}

@@ -9,6 +9,7 @@ public class DialogueNPC : MonoBehaviour
     [SerializeField] AudioClip[] _phrases;
     private int _index;
 
+    [SerializeField] bool _restartDialoguesOnEnd;
     public void StartDialogue()
     {
         if (_index >= _dialogues.Count())

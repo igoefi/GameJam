@@ -96,7 +96,6 @@ public class PlayerStats : Stats
     }
 
 
-
     private void SetVariable(ref float var, TypeBuffEnum type, float value)
     {
         switch (type)
