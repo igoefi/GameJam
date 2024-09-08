@@ -11,4 +11,9 @@ public class EnabledUI : MonoBehaviour
         foreach (var ui in _UI)
             ui.SetActive(true);
     }
+    private void Start()
+    {
+        foreach (var ui in _UI)
+            ui.SetActive(false);
+    }
 }

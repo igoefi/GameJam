@@ -19,8 +19,6 @@ public class DialogueUI : MonoBehaviour
     private void Awake() =>
         Instance = this;
 
-    private void Start() =>
-        gameObject.SetActive(false);
 
     public void SetPhrase(string name, string text, float time, Sprite sprite, AudioClip audio)
     {

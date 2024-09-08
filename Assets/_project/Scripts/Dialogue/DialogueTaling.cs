@@ -1,6 +1,7 @@
 using Ink.Runtime;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class DialogueTaling : MonoBehaviour
 {
@@ -8,6 +9,10 @@ public class DialogueTaling : MonoBehaviour
 
     private Story _story;
     private DialogueNPC _NPC;
+
+
+    [SerializeField] UnityEvent _startEvent;
+    [SerializeField] UnityEvent _endEvent;
 
     private void Awake() =>
         Instance = this;
@@ -21,6 +26,7 @@ public class DialogueTaling : MonoBehaviour
     {
         _story = dialogue;
         _NPC = NPC;
+        _startEvent.Invoke();
     }
 
     public void SetChoise(int num)
@@ -36,7 +42,7 @@ public class DialogueTaling : MonoBehaviour
         NextPhrase();
     }
 
-    private void NextPhrase()
+    public void NextPhrase()
     {
         if (_story == null) return;
 
@@ -70,7 +76,8 @@ public class DialogueTaling : MonoBehaviour
         _story = null;
         DialogueUI.Instance.Hide();
 
-        PlayerInteract.Instance.EndInteract();
+        try { PlayerInteract.Instance.EndInteract(); } catch { }
+        _endEvent.Invoke();
     }
 
     private string GetVariable(string name)
