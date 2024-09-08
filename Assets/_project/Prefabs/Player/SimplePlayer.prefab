@@ -744,10 +744,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _weapons:
-  - _prefab: {fileID: 2520202264503922407, guid: 47b2ca9f96ea3264ea9d256622f5eb6b,
-      type: 3}
-    _currentAmmo: -1
-  - _prefab: {fileID: 2520202264503922407, guid: 803d26a722d10804e88532cdfc846935,
+  - _prefab: {fileID: 6455708926377886582, guid: d4ed23005b900b4459416ae1a9e1fc19,
       type: 3}
     _currentAmmo: -1
   _stats: {fileID: 2115912830132003151}

@@ -270,12 +270,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c289d9a4790a9b740ada668ab43290d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: "\u0424\u043E\u043C\u043A\u0430"
+  _name: "\u041C\u0435\u0447"
   _damage: 40
   _CD: 0.5
   _moveCoefficient: 1.2
   _zone: {fileID: 1362823380336247850}
   _attackRadius: 1.5
+  Type: 3
 --- !u!1 &7854371718722210097
 GameObject:
   m_ObjectHideFlags: 0
